@@ -1,6 +1,7 @@
 import React from 'react';
 import '../scss/main.scss';
 import logo from '../images/logo.svg';
+import EmailInput from './email-input';
 const Main = () => {
     return (
         <div className="main">
@@ -13,6 +14,7 @@ const Main = () => {
             <div className="sub-title">
                 Subscribe and get notified
             </div>
+            <EmailInput />
         </div>
     );
 }
