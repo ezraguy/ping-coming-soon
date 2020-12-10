@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import '../scss/email-input.scss'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const EmailInput = () => {
     const [userInput, setUserInput] = useState('');
     const [inputClass, setInputClass] = useState('email-input');
@@ -13,8 +15,12 @@ const EmailInput = () => {
     }
     const handleSubmit = () => {
         const emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        if (emailReg.test(userInput))
-            alert('valid')
+        if (emailReg.test(userInput)) {
+            toast(
+                `An email was sent to ${userInput}`
+            )
+        }
+
         else {
             setInputClass('email-input input-error  ')
             setShowErr(true)
@@ -25,6 +31,7 @@ const EmailInput = () => {
 
 
         <div className="email-input-wrap">
+            <ToastContainer />
             <input type="text" placeholder="Your email address..." title="email" className={inputClass} onChange={(e) => handleUserInput(e)} value={userInput} />
             <div className="notify-btn-wrap">
                 <button onClick={handleSubmit} className="notify-btn">Notify Me</button>

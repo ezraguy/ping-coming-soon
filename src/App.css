@@ -1,26 +1,7 @@
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
-}
-
-.App .attribution{
- 
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-   bottom:  5px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    
-    
-
-}
-.App .attribution a{
-
-    color: blue;
-
 }
 
 
