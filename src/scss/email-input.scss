@@ -4,7 +4,7 @@
     margin-top:2.5em;
     position: relative;
     flex-wrap: wrap;
-    
+    margin-top: 1.5em;
     .email-input{
     outline: none;
     padding-top: 5px;
@@ -13,8 +13,6 @@
     border-radius: 25px;
     width: 421px;
     font-size: 12pt;
-    
-
     margin-right: 1em;
     height: 57px;
     border: 1px solid hsl(223, 100%, 88%);
@@ -41,8 +39,7 @@
             color: white;
             font-size: 12.5pt;
             border: none;
-            font-weight: 700;
-            transition: .3s ease;
+
             
         }
     }
