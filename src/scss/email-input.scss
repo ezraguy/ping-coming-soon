@@ -1,10 +1,10 @@
 .email-input-wrap{
     display: flex;
     justify-content: center;
-    margin-top:2.5em;
     position: relative;
     flex-wrap: wrap;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
+
     .email-input{
     outline: none;
     padding-top: 5px;
@@ -44,11 +44,9 @@
         }
     }
     .err-msg-wrap{
-
-        
         flex-basis: 100%;
         align-self: flex-end;
-       margin-right:350px;
+        margin-right:350px;
         .err-msg{
             color: red;
             font-style: italic;
