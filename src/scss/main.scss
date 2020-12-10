@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;600;700&display=swap');
 
 .main{
-   
+   height: 100vh;
     font-family: 'Libre Franklin', sans-serif;
     max-width: 1440px;
     display: flex;
@@ -11,7 +11,7 @@
     margin-left: auto;
     justify-content: center;
     margin-right: auto;
-    padding-top: 5.4rem;
+    // padding-top: 1em;
 
     .logo{
     margin-bottom: 2.7rem;
@@ -36,7 +36,7 @@
     }
 
     .dashboard-wrap{
-        margin-top: 3.5em;
+        margin-top: 4.6em;
         max-width: 1440px;
         .dashboard-img{
             width: 100%;
@@ -51,7 +51,7 @@
         .social-icons{
             width: 100%;
             display: flex;
-            margin-top: 3em;
+            margin-top: 4em;
             justify-content: space-between;
             max-width: 120px;
             
@@ -69,7 +69,7 @@
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        bottom:  -20px;
+        bottom:  0px;
         left: 0;
         right: 0;
         text-align: center;
