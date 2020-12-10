@@ -28,9 +28,9 @@ const Main = () => {
             <div className="social-icons-wrap">
 
                 <div className="social-icons">
-                    {socialIcons.map(({ src, id }) => {
-                        return <img src={src} key={id} alt="social icon" className="icon" />
-                    })}
+                    <span className="icon"></span>
+                    <span className="icon"></span>
+                    <span className="icon"></span>
                 </div>
             </div>
             <div className="attribution">

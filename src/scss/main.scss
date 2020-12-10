@@ -19,8 +19,7 @@
 
     .main-title{
         color: #969696;
-        font-size: 3em;
-        
+        font-size: 3em;     
         font-weight: 300;
         margin-bottom: .4em;
 
@@ -60,10 +59,40 @@
             .icon{
                 padding: 4px;
                 border: 1px hsla(0, 0%, 59%, 0.235) solid;
-                width: 19px;
-                height: 19px;
+                width: 20px;
+                height: 20px;
+                transition: .3s ease;
                 border-radius: 50%;
-                fill: aqua;
+                background-repeat: no-repeat;
+                background-position: center center;
+                
+                
+                &:nth-child(1){
+                    background-image: url('../icons/facebook.svg');
+                    &:hover{
+                        background-image: url('../icons/facebook-2.svg');
+                    }
+                }
+
+                &:nth-child(2){
+                    background-image: url('../icons/instagram.svg');
+                    &:hover{
+                        background-image: url('../icons/instagram-2.svg');
+                    }
+                }
+                &:nth-child(3){
+                    background-image: url('../icons/twitter.svg');
+                    &:hover{
+                        background-image: url('../icons/twitter-2.svg');
+                    }
+                }
+                
+               &:hover{
+                   
+                       background-color: hsl(223, 87%, 63%);
+                    
+                    
+               }
             }
         }
     }
