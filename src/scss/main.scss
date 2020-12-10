@@ -1,25 +1,29 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;600;700&display=swap');
 
 .main{
+   
     font-family: 'Libre Franklin', sans-serif;
     max-width: 1440px;
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-left: auto;
+    justify-content: center;
     margin-right: auto;
-    margin-top: 5.4rem;
+    padding-top: 5.4rem;
 
     .logo{
-    margin-bottom: 2.6rem;
+    margin-bottom: 2.7rem;
     }
 
     .main-title{
         color: #969696;
-        font-size: 36pt;
-        height: 60px;
+        font-size: 3em;
+        
         font-weight: 300;
         margin-bottom: .4em;
+
         .bold{
             font-weight: 700;
             color: black;
@@ -27,8 +31,55 @@
     }
 
     .sub-title{
-       
         font-size: 15pt;
         font-weight: 300;
+    }
+
+    .dashboard-wrap{
+        margin-top: 3.5em;
+        max-width: 1440px;
+        .dashboard-img{
+            width: 100%;
+            max-width: 640px;
+        }
+    }
+
+    .social-icons-wrap{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .social-icons{
+            width: 100%;
+            display: flex;
+            margin-top: 3em;
+            justify-content: space-between;
+            max-width: 120px;
+            
+            .icon{
+                padding: 4px;
+                border: 1px hsla(0, 0%, 59%, 0.235) solid;
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                fill: aqua;
+            }
+        }
+    }
+   
+}
+
+
+@media screen and(max-width:652px){
+    .main{
+
+        .dashboard-wrap{
+            margin-top: 2em;
+        }
+
+        .social-icons-wrap{
+           .social-icons{
+               margin-top: 2em;
+           }
+        }
     }
 }
