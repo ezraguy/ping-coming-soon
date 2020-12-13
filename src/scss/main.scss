@@ -57,7 +57,8 @@
             max-width: 120px;
             
             .icon{
-                padding: 4px;
+                cursor: pointer;
+                padding: 8px;
                 border: 1px hsla(0, 0%, 59%, 0.235) solid;
                 width: 20px;
                 height: 20px;
@@ -115,6 +116,10 @@
 
         .dashboard-wrap{
             margin-top: 2em;
+            .dashboard-img{
+                width: 80%;
+                
+            }
         }
 
         .social-icons-wrap{
@@ -123,6 +128,8 @@
                margin-bottom: 5px;
            }
         }
+
+        
        
     }
 }
